@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Proyecto_8-1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bienvenida">Bienvenido a la app de Nombres. Escribe tu nombre en el cuadro de texto y pulsa el botón de enviar.</string>
+    <string name="introduccion">Podrás ver los países donde se encuentra tu nombre, y la posibilidad de encontrarlo</string>
+    <string name="resultado">Resultados para el nombre: %1$d</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/cargaDatosFragment"
+        android:name="dam.moviles.proyecto_8_1.vista.CargaDatosFragment"
+        android:label="fragment_carga_datos"
+        tools:layout="@layout/fragment_carga_datos" >
+        <action
+            android:id="@+id/action_cargaDatosFragment_to_resultadoFragment"
+            app:destination="@id/resultadoFragment"
+            app:popUpTo="@id/inicioFragment" />
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="dam.moviles.proyecto_8_1.vista.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_cargaDatosFragment"
+            app:destination="@id/cargaDatosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultadoFragment"
+        android:name="dam.moviles.proyecto_8_1.vista.ResultadoFragment"
+        android:label="fragment_resultado"
+        tools:layout="@layout/fragment_resultado" >
+        <argument
+            android:name="nombre"
+            app:argType="dam.moviles.proyecto_8_1.modelo.Nombre" />
+    </fragment>
+</navigation>
