@@ -8,5 +8,5 @@ import java.io.Serializable
 data class Nombre(
     @Json(name="count") val id:Int,
     val name:String,
-    @Json(name = "country") val paises:Array<Pais>
+    @Json(name = "country") val paises:List<Pais>
 ): Serializable
