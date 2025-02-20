@@ -4,7 +4,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface NombresApi {
-    @GET("https://api.nationalize.io/")
+    @GET(".")
     suspend fun consultarNombre(
         @Query("name") name:String
     ):Nombre

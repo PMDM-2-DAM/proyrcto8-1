@@ -35,10 +35,10 @@ class CargaDatosFragment : Fragment() {
     }
 
     fun cargarDatos() {
-        val nombre:String = CargaDatosFragmentArgs.fromBundle(requireArguments()).nombre
+        val arg:String = CargaDatosFragmentArgs.fromBundle(requireArguments()).nombre
         lifecycleScope.launch {
             try {
-                val nombre:Nombre = NombresRepository().consultarNombre(nombre)
+                val nombre:Nombre = NombresRepository().consultarNombre(arg)
 
                 val nav: NavController = findNavController()
                 val flecha = CargaDatosFragmentDirections.actionCargaDatosFragmentToResultadoFragment(nombre)

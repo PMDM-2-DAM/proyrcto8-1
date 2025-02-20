@@ -26,9 +26,4 @@ class ProbabilidadAdapter(
             lambda(holder)
         }
     }
-
-    fun setListaPaises(p:List<Pais>) {
-        paises = p
-        notifyDataSetChanged()
-    }
 }
